@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <style>
+    /*.table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      .table tr th,
+      .table tr td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      .striped-table tbody tr:nth-child(2n) {
+        background-color: gray;
+      }
+      */
+    .table {
+      border: 1px solid black;
+      /*border-collapse: collapse;*/
+      width: 300px;
+    }
+    /* 같은 클래스를 사용할 때 같은 내용이면 아래 내용 적용 (합체 되는 개념)*/
+  </style>
+  <body>
+    <!-- CSS 적용하는 방법 3가지 -->
+    <!-- 1. ㄹinline style : html 시작 태그에 style 속성을 통해 직접 지정 -->
+    <!-- 2. internal css : head 태그 안에 <style> 태그에 스타일을 지정 -->
+    <!-- 3. external css : 별도의 css 파일을 만들고 <head> 태그 안에 css 파일을 사빕해서 사용 (실무에서 많이 사용) -->
+    <a href="https://cafe.naver.com/steamindiegame">왁물원</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>우왁굳</td>
+          <td>010-2323-3243</td>
+          <td>ecvhao</td>
+        </tr>
+        <tr>
+          <td>비챤</td>
+          <td>010-3232-3422</td>
+          <td>xoxv17</td>
+        </tr>
+        <tr>
+          <td>고세구</td>
+          <td>010-2342-3234</td>
+          <td>segugo.zip</td>
+        </tr>
+        <tr>
+          <td>주르르</td>
+          <td>010-2432-3543</td>
+          <td>porri</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table class="table striped-table">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>우왁굳</td>
+          <td>010-2323-3243</td>
+          <td>ecvhao</td>
+        </tr>
+        <tr>
+          <td>비챤</td>
+          <td>010-3232-3422</td>
+          <td>xoxv17</td>
+        </tr>
+        <tr>
+          <td>고세구</td>
+          <td>010-2342-3234</td>
+          <td>segugo.zip</td>
+        </tr>
+        <tr>
+          <td>주르르</td>
+          <td>010-2432-3543</td>
+          <td>porri</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

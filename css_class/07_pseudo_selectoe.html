@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 가상 클래스 선택자 */
+    a {
+      text-decoration: none;
+    }
+
+    /* 마우스를 올린 순간에만 적용*/
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    button:hover {
+      color: white;
+    }
+
+    /* 방문한 적이 없는 링크 */
+    a:link {
+      color: black;
+    }
+
+    /* 방문한 적이 있는 링크 */
+    a:visited {
+      color: red;
+    }
+
+    /* 마우스가 포커스 됐을 때 */
+    input:focus {
+      border: 4px solid red;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    /* 짝수 2n */
+    /* 홀수 2n + 1 */
+
+    tbody > tr:nth-child(2n + 1) {
+      background-color: gray;
+    }
+  </style>
+  <body>
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.com">구글</a>
+    <a href="https://dfsafdas.com">가짜 사이트</a>
+    <br />
+    <button>조회</button>
+    <br />
+    <input type="text" />
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>우왁굳</td>
+          <td>010-2323-3243</td>
+          <td>ecvhao</td>
+        </tr>
+        <tr>
+          <td>비챤</td>
+          <td>010-3232-3422</td>
+          <td>xoxv17</td>
+        </tr>
+        <tr>
+          <td>고세구</td>
+          <td>010-2342-3234</td>
+          <td>segugo.zip</td>
+        </tr>
+        <tr>
+          <td>주르르</td>
+          <td>010-2432-3543</td>
+          <td>porri</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

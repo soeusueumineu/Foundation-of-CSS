@@ -1,0 +1,14 @@
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table tr th,
+.table tr td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.striped-table tbody tr:nth-child(2n) {
+  background-color: gray;
+}

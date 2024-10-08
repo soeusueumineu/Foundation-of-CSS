@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background-color: #f9fc63;
+        color: black;
+        font-weight: 900;
+      }
+
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #333;
+        position: sticky;
+        top: 0;
+      }
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: #f9fc63;
+        color: black;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .fakeimage {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .footer {
+        padding: 2px;
+        text-align: center;
+        background-color: #ddd;
+      }
+
+      @media screen and (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 레이아웃을 위한 시멘틱 태그 -->
+    <!-- header -->
+    <header class="header">Portfolio</header>
+    <nav class="navbar">
+      <a href="#project1">메뉴1</a>
+      <a href="#project2">메뉴2</a>
+      <a href="#project3">메뉴3</a>
+      <a href="#project4">메뉴4</a>
+      <a href="#project5">메뉴5</a>
+    </nav>
+    <div class="row">
+      <aside class="side">
+        <div class="about">
+          <h2>About</h2>
+          <div class="fakeimage" style="height: 200px">Image</div>
+          <p>저는 경기대학교에 제학 중입니다.</p>
+          <h3>Skills</h3>
+          <p>java, c, python, js, html, css</p>
+          <div class="fakeimage" style="height: 60px">Image</div>
+          <br />
+          <div class="fakeimage" style="height: 60px">Image</div>
+          <br />
+          <div class="fakeimage" style="height: 60px">Image</div>
+        </div>
+      </aside>
+      <main class="main">
+        <section id="project1">
+          <h2>프로젝트 1</h2>
+          <h5>2022년 3월</h5>
+          <div class="fakeimage" style="height: 200px">Image</div>
+          <p>이 프로젝트는 ~~~~프로젝트입니다. ~~~~~~~~</p>
+        </section>
+        <section id="project2">
+          <h2>프로젝트 2</h2>
+          <h5>2022년 3월</h5>
+          <div class="fakeimage" style="height: 200px">Image</div>
+          <p>이 프로젝트는 ~~~~프로젝트입니다. ~~~~~~~~</p>
+        </section>
+        <section id="project3">
+          <h2>프로젝트 3</h2>
+          <h5>2022년 3월</h5>
+          <div class="fakeimage" style="height: 200px">Image</div>
+          <p>이 프로젝트는 ~~~~프로젝트입니다. ~~~~~~~~</p>
+        </section>
+        <section id="project4">
+          <h2>프로젝트 4</h2>
+          <h5>2022년 3월</h5>
+          <div class="fakeimage" style="height: 200px">Image</div>
+          <p>이 프로젝트는 ~~~~프로젝트입니다. ~~~~~~~~</p>
+        </section>
+        <section id="project5">
+          <h2>프로젝트 5</h2>
+          <h5>2022년 3월</h5>
+          <div class="fakeimage" style="height: 200px">Image</div>
+          <p>이 프로젝트는 ~~~~프로젝트입니다. ~~~~~~~~</p>
+        </section>
+      </main>
+    </div>
+    <div class="footer">
+      <h2>경기대학교</h2>
+    </div>
+  </body>
+</html>
